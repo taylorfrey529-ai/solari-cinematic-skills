@@ -1,0 +1,37 @@
+{
+  "skill": "cinematic-storyboard",
+  "test_cases": [
+    {
+      "input": "storyboard this scene using the shot ladder",
+      "should_trigger": true
+    },
+    {
+      "input": "import this PDF cinematic bible and make a shot list",
+      "should_trigger": true
+    },
+    {
+      "input": "turn this screenplay into coverage and an animatic",
+      "should_trigger": true
+    },
+    {
+      "input": "previz the trailer with establishing then close-ups",
+      "should_trigger": true
+    },
+    {
+      "input": "board this lookbook onto the Solari cinematic system",
+      "should_trigger": true
+    },
+    {
+      "input": "generate a 2d sprite sheet of a walk cycle",
+      "should_trigger": false
+    },
+    {
+      "input": "build a tetris clone with a start screen",
+      "should_trigger": false
+    },
+    {
+      "input": "write unit tests for the auth middleware",
+      "should_trigger": false
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "skill": "cinematic-storyboard",
+  "test_cases": [
+    {
+      "name": "board_from_brief_walks_ladder",
+      "input": "Storyboard an 8-shot scene: a lone sentinel crosses a causeway into a golden citadel at dawn and finally looks up, broken. Use the Solari ladder.",
+      "assertions": [
+        "Returns a director table plus Storyboard JSON",
+        "Sequence starts on rung 0 ES unless an intimate interior is already established",
+        "Every adjacent pair differs by at most 1 rung, or is flagged ruleBreak with a reason",
+        "Each shot has code, slug, action, camera, lighting, emotion, and imagePrompt",
+        "imagePrompts share one character and location lock and contain no on-pixel shot labels"
+      ]
+    },
+    {
+      "name": "import_pdf_cinematic_bible",
+      "input": "Import this PDF cinematic bible and turn it into a shot list that obeys the one-step ladder.",
+      "assertions": [
+        "Runs extract_pdf_design.mjs or equivalent text extract before boarding",
+        "Maps extracted setting, cast, and palette into visualStyle and imagePrompts",
+        "Reboards illegal source jumps onto a legal walk and records original calls in notes",
+        "Sets source.type to pdf with an excerpt",
+        "Does not invent a bible when extract reports empty or screenshotLikely"
+      ]
+    },
+    {
+      "name": "refuses_multistep_coverage_jump",
+      "input": "Give me three shots of a conversation: wide, then close-up of the speaker, then extreme close-up of the listener's eye.",
+      "assertions": [
+        "Does not output WS then CU then ECU as consecutive cuts",
+        "Explains the one-step rule with a concrete illegal example (e.g. 2 to 8)",
+        "Offers a legal walk or a shorter legal subset instead of the requested jump"
+      ]
+    },
+    {
+      "name": "empty_screenshot_pdf",
+      "input": "Board this 110-page ChatGPT Print-to-PDF. It is named World of Starcraft FOR SALE.",
+      "assertions": [
+        "Detects near-empty or screenshot-only extractable text",
+        "Tells the user the PDF has no usable cinematic design text",
+        "Does not hallucinate StarCraft or Warcraft lore, units, or maps",
+        "Asks for a pasted scene or a text-based bible, or proceeds only from the user's prompt plus the ladder"
+      ]
+    },
+    {
+      "name": "ip_heavy_source_gets_original_world",
+      "input": "Import my StarCraft/Warcraft mashup lookbook and storyboard the opening cinematic.",
+      "assertions": [
+        "Keeps ladder grammar, lighting, and pacing from the source",
+        "Replaces franchise names, factions, and famous faces with original equivalents",
+        "States that copyrighted IP was not cloned"
+      ]
+    }
+  ]
+}

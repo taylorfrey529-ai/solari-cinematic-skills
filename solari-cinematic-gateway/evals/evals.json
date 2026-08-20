@@ -1,0 +1,52 @@
+{
+  "skill": "solari-cinematic-gateway",
+  "test_cases": [
+    {
+      "name": "init_gateway_before_shots",
+      "input": "Resume cinematic development. Create the Solari Cinematic Gateway for Birth of the Sunwell.",
+      "assertions": [
+        "Writes a tension model before any shot list",
+        "Emits a Gateway Package with goldenMaster.lockPrompt",
+        "Runs init_gateway.py or equivalent JSON with sacredSource the Sunwell",
+        "Hands boarding to cinematic-storyboard with a legal ladder"
+      ]
+    },
+    {
+      "name": "expand_panel_5_keeps_sunwell",
+      "input": "Expand this storyboard panel: PANEL 5 BIRTH OF THE SUNWELL, Wide Establishing Shot, 24mm anamorphic slow clockwise orbit.",
+      "assertions": [
+        "Treats the panel as one ES (rung 0) with an in-shot orbit, not extra fake cards",
+        "Keeps the word Sunwell; does not rename it Dawnwell",
+        "Strips captions, timecode, and SHOT TYPE from generated pixels",
+        "Builds a lead-in walk and a release; any smash back to ES is ruleBreak with a manifestation reason",
+        "Runs validate_ladder.py and passes"
+      ]
+    },
+    {
+      "name": "ip_scan_blocks_franchise_cast",
+      "input": "Use Sylvanas and Kael'thas at the Sunwell in Silvermoon.",
+      "assertions": [
+        "Keeps Sunwell",
+        "Does not use Sylvanas, Kael'thas, or Silvermoon in lockPrompt or shot action",
+        "Rewrites to Solari / Dawnspire original names and says so"
+      ]
+    },
+    {
+      "name": "golden_master_must_validate",
+      "input": "Initialize a Golden Master for the Lead Luminary using the Evermore palette.",
+      "assertions": [
+        "Fills all required Golden Master fields including identityLock.eyes and lockPrompt",
+        "Eyes are solar-gold, never fel-green",
+        "Runs validate_golden_master.py successfully"
+      ]
+    },
+    {
+      "name": "defers_plain_storyboard",
+      "input": "Storyboard an 8-shot conversation in a diner using the shot ladder.",
+      "assertions": [
+        "Does not invent a Solari Gateway package for a diner scene",
+        "Defers to cinematic-storyboard instead of boarding under this skill"
+      ]
+    }
+  ]
+}

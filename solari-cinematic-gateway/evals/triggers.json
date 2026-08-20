@@ -1,0 +1,13 @@
+{
+  "skill": "solari-cinematic-gateway",
+  "test_cases": [
+    { "input": "Create the Solari Cinematic Gateway", "should_trigger": true },
+    { "input": "Resume cinematic development and expand Panel 5 Birth of the Sunwell", "should_trigger": true },
+    { "input": "Initialize a Golden Master with the Evermore palette", "should_trigger": true },
+    { "input": "Apply Cinematic Command Language tension model then board the Sunwell rite", "should_trigger": true },
+    { "input": "Export the Luminary identity stack for Unity", "should_trigger": true },
+    { "input": "storyboard this diner scene with the shot ladder only", "should_trigger": false },
+    { "input": "generate a 2d sprite sheet of a walk cycle", "should_trigger": false },
+    { "input": "write unit tests for the auth middleware", "should_trigger": false }
+  ]
+}

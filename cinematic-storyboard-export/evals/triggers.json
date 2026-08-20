@@ -1,0 +1,12 @@
+{
+  "skill": "cinematic-storyboard-export",
+  "test_cases": [
+    { "input": "export this storyboard as PDF", "should_trigger": true },
+    { "input": "download a CSV shot list and director HTML", "should_trigger": true },
+    { "input": "board this scene on the ladder then export Unity JSON", "should_trigger": true },
+    { "input": "print the cinematic storyboard as a contact sheet", "should_trigger": true },
+    { "input": "generate a 2d sprite sheet of a walk cycle", "should_trigger": false },
+    { "input": "write unit tests for the auth middleware", "should_trigger": false },
+    { "input": "initialize a Golden Master only, no shots", "should_trigger": false }
+  ]
+}

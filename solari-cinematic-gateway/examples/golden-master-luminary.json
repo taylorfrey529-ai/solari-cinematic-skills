@@ -1,0 +1,22 @@
+{
+  "name": "Lead Luminary of the Sunwell Rite",
+  "universe": "Solari",
+  "race": "Solari",
+  "sex": "female",
+  "ageAppearance": "ageless adult",
+  "height": "tall elven",
+  "bodyType": "lithe ceremonial warrior",
+  "silhouette": "crimson robe, gold plate, long pale-gold hair",
+  "identityLock": {
+    "skull": "long elven skull, high cheekbones, pointed ears",
+    "proportions": "1:7.5",
+    "eyes": "amber-gold, solar dawnlight, never fel-green",
+    "hair": "long pale-gold",
+    "skin": "warm gold-olive",
+    "marks": "none",
+    "wardrobeCanon": "wine-crimson robe, gold filigree plate, moonsteel trim",
+    "forbidden": ["fel-green eyes", "Sin'dorei", "named Warcraft faces"]
+  },
+  "lockPrompt": "Photoreal cinematic still of a Solari Luminary of the Children of the Sun: adult woman, long pale-gold hair, pointed ears, warm gold-olive skin, amber-gold irises with solar dawnlight, never green, never smirking. Wine-crimson robe over gold plate. The Sunwell plaza at Dawnspire under a starfield. Anamorphic 16:9, no text, no watermark.",
+  "palette": "evermore"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Legal walk",
+  "logline": "A courier enters a hangar and finds the last working radio.",
+  "shots": [
+    {
+      "rung": 0,
+      "code": "ES",
+      "slug": "Rain Hangar",
+      "action": "The hangar sits in weather. No one yet.",
+      "ruleBreak": false
+    },
+    {
+      "rung": 1,
+      "code": "EWS",
+      "slug": "A Figure Enters",
+      "action": "A courier is small against the bay doors.",
+      "ruleBreak": false
+    },
+    {
+      "rung": 2,
+      "code": "WS",
+      "slug": "The Aisle",
+      "action": "She walks the wet concrete between mothballed craft.",
+      "ruleBreak": false
+    }
+  ]
+}

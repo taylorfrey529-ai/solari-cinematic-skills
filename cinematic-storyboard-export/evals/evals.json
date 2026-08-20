@@ -1,0 +1,41 @@
+{
+  "skill": "cinematic-storyboard-export",
+  "test_cases": [
+    {
+      "name": "export_legal_board_all_formats",
+      "input": "Export Birth of the Sunwell as JSON, CSV, director HTML, PDF, and a contact sheet.",
+      "assertions": [
+        "Runs validate_ladder.py and only exports if PASS (or flagged jumps with reasons)",
+        "Writes storyboard.json, shots.csv, director.html, director.pdf, contact-sheet.jpg, MANIFEST.json",
+        "Director chrome labels SHOT TYPE off the plate; copied frames have no burnt-in captions",
+        "Prints a director table plus the manifest paths"
+      ]
+    },
+    {
+      "name": "refuses_illegal_ladder",
+      "input": "Export this board JSON that jumps ES to CU with no ruleBreak.",
+      "assertions": [
+        "Does not write a clean PASS export",
+        "Shows the illegal jump",
+        "Offers legalize or flagged reason instead of dumping"
+      ]
+    },
+    {
+      "name": "board_then_export",
+      "input": "Storyboard an 8-shot Sunwell plaza scene on the ladder and export director HTML.",
+      "assertions": [
+        "Boards via cinematic-storyboard first (rungs, codes, one-step)",
+        "Then runs export_board.py --format html",
+        "HTML has one panel per shot with SHOT TYPE, VISUAL, CAMERA"
+      ]
+    },
+    {
+      "name": "csv_shot_list",
+      "input": "Download a CSV shot list of the current board.",
+      "assertions": [
+        "CSV columns include #, rung, code, slug, action, camera, step",
+        "Does not regenerate frames"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Illegal jump",
+  "logline": "Wide, then a face, then an eye — this sequence is illegal as consecutive cuts.",
+  "notes": "Original calls: WS, CU, ECU",
+  "shots": [
+    {
+      "rung": 2,
+      "code": "WS",
+      "slug": "Both at the table",
+      "action": "Two figures sit across a steel table.",
+      "ruleBreak": false
+    },
+    {
+      "rung": 8,
+      "code": "CU",
+      "slug": "The speaker",
+      "action": "The speaker's face fills the frame.",
+      "ruleBreak": false
+    },
+    {
+      "rung": 9,
+      "code": "ECU",
+      "slug": "The listener's eye",
+      "action": "One eye. A flinch.",
+      "ruleBreak": false
+    }
+  ]
+}
